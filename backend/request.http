@@ -1,0 +1,76 @@
+###
+POST http://localhost:4000/student-api/signin
+Content-Type: application/json
+
+{
+    "userId":"22071A0561",
+    "userType":"student",
+    "password":"pranitha"
+}
+###
+GET http://localhost:4000/student-api/projects
+###
+GET http://localhost:4000/teacher-api/projects
+###
+POST http://localhost:4000/student-api/signup
+Content-Type: application/json
+
+{
+    "userId":"22071A0561",
+    "userName":"Pranitha",
+    "userType":"student",
+    "password":"pranitha",
+    "Email":"pranitha@gmail.com",
+    "permission":false,
+    "projectDetails": {},
+  "requestedTeacherId": "teacher456"
+}
+###
+POST http://localhost:4000/teacher-api/signin
+Content-Type: application/json
+
+{
+    "userId":"22071A0560",
+    "userType":"teacher",
+    "password":"pranitha"
+}
+###
+GET http://localhost:4000/product-api/search
+###
+POST http://localhost:4000/teacher-api/signup
+Content-Type: application/json
+
+{
+    "userId":"22071A0561",
+    "userName":"Teacher",
+    "userType":"teacher",
+    "designation":"professor",
+    "password":"pranitha",
+    "Email":"pranitha@gmail.com",
+    "permission":true,
+    "requests": [
+    {
+      "studentId": "student123",
+      "studentName": "John Doe",
+      "requestedAt": "2023-06-08T12:00:00Z"
+    }
+  ]
+}
+###
+POST http://localhost:4000/teacher-api/project
+Content-Type: application/json
+
+{
+    "projectId":"{{$timestamp}}",
+    "title":"hello",
+    "faculty":"sir",
+    "designation":"professor",
+    "domain":"ml",
+    "category":"application",
+    "team":[],
+    "leadsto":[],
+    "partof":[],
+    "publicationDetails":[]
+}
+###
+GET
