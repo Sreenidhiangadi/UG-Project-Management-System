@@ -1,0 +1,7 @@
+.responsive-img {
+    width: 100%;       /* Make the image take up the full width of its container */
+    max-height: 100vh;  /* Set the maximum height to 75% of the viewport height */
+    height: auto;      /* Scale the height automatically to maintain aspect ratio */
+    object-fit: cover; /* Optionally, make sure the image covers the container nicely */
+  }
+ 
